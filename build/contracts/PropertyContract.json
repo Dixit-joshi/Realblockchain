@@ -1,0 +1,1656 @@
+{
+  "contractName": "PropertyContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "properties",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "living_area",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bedrooms",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "bathrooms",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "furnishings",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "parking",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_living_area",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_bedrooms",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_bathrooms",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "_furnishings",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "_parking",
+          "type": "bool"
+        }
+      ],
+      "name": "setProperty",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getProperty",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "living_area",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "bedrooms",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "bathrooms",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "furnishings",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "parking",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct PropertyContract.Property",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getProperty\",\"outputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"living_area\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"bedrooms\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"bathrooms\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"furnishings\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"parking\",\"type\":\"bool\"}],\"internalType\":\"struct PropertyContract.Property\",\"name\":\"\",\"type\":\"tuple\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"properties\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"living_area\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"bedrooms\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"bathrooms\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"furnishings\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"parking\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_living_area\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_bedrooms\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_bathrooms\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"_furnishings\",\"type\":\"bool\"},{\"internalType\":\"bool\",\"name\":\"_parking\",\"type\":\"bool\"}],\"name\":\"setProperty\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/PropertyContract.sol\":\"PropertyContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/PropertyContract.sol\":{\"keccak256\":\"0x6a7b5b2d7090da339544e80bbfcb2260a0809a970aab57517b62bed3d2749659\",\"urls\":[\"bzz-raw://ea9460872ecdda12b376615032b5c64370977b923406cc730ac829d9d8a7adbb\",\"dweb:/ipfs/Qmd5JHpMyYGN6ztJiTZPA2YGbS7qMLTQxNxTeHnYdj7PLS\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610573806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063077510701461004657806325ec77d714610064578063e71f820214610098575b600080fd5b61004e6100b4565b60405161005b9190610435565b60405180910390f35b61007e600480360361007991908101906102f1565b61015e565b60405161008f959493929190610450565b60405180910390f35b6100b260048036036100ad919081019061031a565b6101ae565b005b6100bc61027f565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040518060a00160405290816000820154815260200160018201548152602001600282015481526020016003820160009054906101000a900460ff161515151581526020016003820160019054906101000a900460ff161515151581525050905090565b60006020528060005260406000206000915090508060000154908060010154908060020154908060030160009054906101000a900460ff16908060030160019054906101000a900460ff16905085565b6040518060a0016040528086815260200185815260200184815260200183151581526020018215158152506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101556040820151816002015560608201518160030160006101000a81548160ff02191690831515021790555060808201518160030160016101000a81548160ff0219169083151502179055509050505050505050565b6040518060a001604052806000815260200160008152602001600081526020016000151581526020016000151581525090565b6000813590506102c1816104eb565b92915050565b6000813590506102d681610502565b92915050565b6000813590506102eb81610519565b92915050565b60006020828403121561030357600080fd5b6000610311848285016102b2565b91505092915050565b600080600080600060a0868803121561033257600080fd5b6000610340888289016102dc565b9550506020610351888289016102dc565b9450506040610362888289016102dc565b9350506060610373888289016102c7565b9250506080610384888289016102c7565b9150509295509295909350565b61039a816104b5565b82525050565b6103a9816104b5565b82525050565b60a0820160008201516103c56000850182610417565b5060208201516103d86020850182610417565b5060408201516103eb6040850182610417565b5060608201516103fe6060850182610391565b5060808201516104116080850182610391565b50505050565b610420816104e1565b82525050565b61042f816104e1565b82525050565b600060a08201905061044a60008301846103af565b92915050565b600060a0820190506104656000830188610426565b6104726020830187610426565b61047f6040830186610426565b61048c60608301856103a0565b61049960808301846103a0565b9695505050505050565b60006104ae826104c1565b9050919050565b60008115159050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b6104f4816104a3565b81146104ff57600080fd5b50565b61050b816104b5565b811461051657600080fd5b50565b610522816104e1565b811461052d57600080fd5b5056fea365627a7a7231582082584e0f14a17bb37cd20ee1d83f90998ea3d5959cdd85919c5f086805f947026c6578706572696d656e74616cf564736f6c63430005110040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063077510701461004657806325ec77d714610064578063e71f820214610098575b600080fd5b61004e6100b4565b60405161005b9190610435565b60405180910390f35b61007e600480360361007991908101906102f1565b61015e565b60405161008f959493929190610450565b60405180910390f35b6100b260048036036100ad919081019061031a565b6101ae565b005b6100bc61027f565b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040518060a00160405290816000820154815260200160018201548152602001600282015481526020016003820160009054906101000a900460ff161515151581526020016003820160019054906101000a900460ff161515151581525050905090565b60006020528060005260406000206000915090508060000154908060010154908060020154908060030160009054906101000a900460ff16908060030160019054906101000a900460ff16905085565b6040518060a0016040528086815260200185815260200184815260200183151581526020018215158152506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101556040820151816002015560608201518160030160006101000a81548160ff02191690831515021790555060808201518160030160016101000a81548160ff0219169083151502179055509050505050505050565b6040518060a001604052806000815260200160008152602001600081526020016000151581526020016000151581525090565b6000813590506102c1816104eb565b92915050565b6000813590506102d681610502565b92915050565b6000813590506102eb81610519565b92915050565b60006020828403121561030357600080fd5b6000610311848285016102b2565b91505092915050565b600080600080600060a0868803121561033257600080fd5b6000610340888289016102dc565b9550506020610351888289016102dc565b9450506040610362888289016102dc565b9350506060610373888289016102c7565b9250506080610384888289016102c7565b9150509295509295909350565b61039a816104b5565b82525050565b6103a9816104b5565b82525050565b60a0820160008201516103c56000850182610417565b5060208201516103d86020850182610417565b5060408201516103eb6040850182610417565b5060608201516103fe6060850182610391565b5060808201516104116080850182610391565b50505050565b610420816104e1565b82525050565b61042f816104e1565b82525050565b600060a08201905061044a60008301846103af565b92915050565b600060a0820190506104656000830188610426565b6104726020830187610426565b61047f6040830186610426565b61048c60608301856103a0565b61049960808301846103a0565b9695505050505050565b60006104ae826104c1565b9050919050565b60008115159050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b6104f4816104a3565b81146104ff57600080fd5b50565b61050b816104b5565b811461051657600080fd5b50565b610522816104e1565b811461052d57600080fd5b5056fea365627a7a7231582082584e0f14a17bb37cd20ee1d83f90998ea3d5959cdd85919c5f086805f947026c6578706572696d656e74616cf564736f6c63430005110040",
+  "sourceMap": "104:721:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;104:721:0;;;;;;;",
+  "deployedSourceMap": "104:721:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;104:721:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;713:109;;;:::i;:::-;;;;;;;;;;;;;;;;295:46;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;350:355;;;;;;;;;;;;;;;;:::i;:::-;;713:109;757:15;;:::i;:::-;792:10;:22;803:10;792:22;;;;;;;;;;;;;;;785:29;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;713:109;:::o;295:46::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;350:355::-;552:145;;;;;;;;575:12;552:145;;;;602:9;552:145;;;;626:10;552:145;;;;651:12;552:145;;;;;;678:8;552:145;;;;;527:10;:22;538:10;527:22;;;;;;;;;;;;;;;:170;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;350:355;;;;;:::o;104:721::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;5:130:-1:-;;85:6;72:20;63:29;;97:33;124:5;97:33;;;57:78;;;;;142:124;;219:6;206:20;197:29;;231:30;255:5;231:30;;;191:75;;;;;273:130;;353:6;340:20;331:29;;365:33;392:5;365:33;;;325:78;;;;;410:241;;514:2;502:9;493:7;489:23;485:32;482:2;;;530:1;527;520:12;482:2;565:1;582:53;627:7;618:6;607:9;603:22;582:53;;;572:63;;544:97;476:175;;;;;658:731;;;;;;824:3;812:9;803:7;799:23;795:33;792:2;;;841:1;838;831:12;792:2;876:1;893:53;938:7;929:6;918:9;914:22;893:53;;;883:63;;855:97;983:2;1001:53;1046:7;1037:6;1026:9;1022:22;1001:53;;;991:63;;962:98;1091:2;1109:53;1154:7;1145:6;1134:9;1130:22;1109:53;;;1099:63;;1070:98;1199:2;1217:50;1259:7;1250:6;1239:9;1235:22;1217:50;;;1207:60;;1178:95;1304:3;1323:50;1365:7;1356:6;1345:9;1341:22;1323:50;;;1313:60;;1283:96;786:603;;;;;;;;;1396:94;1463:21;1478:5;1463:21;;;1458:3;1451:34;1445:45;;;1497:104;1574:21;1589:5;1574:21;;;1569:3;1562:34;1556:45;;;1683:950;1824:4;1819:3;1815:14;1914:4;1907:5;1903:16;1897:23;1926:63;1983:4;1978:3;1974:14;1960:12;1926:63;;;1844:151;2072:4;2065:5;2061:16;2055:23;2084:63;2141:4;2136:3;2132:14;2118:12;2084:63;;;2005:148;2231:4;2224:5;2220:16;2214:23;2243:63;2300:4;2295:3;2291:14;2277:12;2243:63;;;2163:149;2392:4;2385:5;2381:16;2375:23;2404:57;2455:4;2450:3;2446:14;2432:12;2404:57;;;2322:145;2543:4;2536:5;2532:16;2526:23;2555:57;2606:4;2601:3;2597:14;2583:12;2555:57;;;2477:141;1797:836;;;;2640:103;2713:24;2731:5;2713:24;;;2708:3;2701:37;2695:48;;;2750:113;2833:24;2851:5;2833:24;;;2828:3;2821:37;2815:48;;;2870:310;;3036:3;3025:9;3021:19;3013:27;;3051:119;3167:1;3156:9;3152:17;3143:6;3051:119;;;3007:173;;;;;3187:635;;3405:3;3394:9;3390:19;3382:27;;3420:71;3488:1;3477:9;3473:17;3464:6;3420:71;;;3502:72;3570:2;3559:9;3555:18;3546:6;3502:72;;;3585;3653:2;3642:9;3638:18;3629:6;3585:72;;;3668:66;3730:2;3719:9;3715:18;3706:6;3668:66;;;3745:67;3807:3;3796:9;3792:19;3783:6;3745:67;;;3376:446;;;;;;;;;3829:91;;3891:24;3909:5;3891:24;;;3880:35;;3874:46;;;;3927:85;;4000:5;3993:13;3986:21;3975:32;;3969:43;;;;4019:121;;4092:42;4085:5;4081:54;4070:65;;4064:76;;;;4147:72;;4209:5;4198:16;;4192:27;;;;4226:117;4295:24;4313:5;4295:24;;;4288:5;4285:35;4275:2;;4334:1;4331;4324:12;4275:2;4269:74;;4350:111;4416:21;4431:5;4416:21;;;4409:5;4406:32;4396:2;;4452:1;4449;4442:12;4396:2;4390:71;;4468:117;4537:24;4555:5;4537:24;;;4530:5;4527:35;4517:2;;4576:1;4573;4566:12;4517:2;4511:74;",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.4.22 <0.9.0;\r\npragma experimental ABIEncoderV2;\r\ncontract PropertyContract {\r\n    struct Property {\r\n        uint living_area;\r\n        uint bedrooms;\r\n        uint bathrooms;\r\n        bool furnishings;\r\n        bool parking;\r\n    }\r\n\r\n    mapping(address => Property) public properties;\r\n\r\n    function setProperty(\r\n        uint _living_area,\r\n        uint _bedrooms,\r\n        uint _bathrooms,\r\n        bool _furnishings,\r\n        bool _parking\r\n    ) public {\r\n        properties[msg.sender] = Property(\r\n            _living_area,\r\n            _bedrooms,\r\n            _bathrooms,\r\n            _furnishings,\r\n            _parking\r\n        );\r\n    }\r\n\r\n    function getProperty() public view returns (Property memory) {\r\n        return properties[msg.sender];\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\DIXIT\\Desktop\\blockstorage\\property-project\\contracts\\PropertyContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/PropertyContract.sol",
+    "exportedSymbols": {
+      "PropertyContract": [
+        56
+      ]
+    },
+    "id": 57,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "35:32:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "69:33:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 56,
+        "linearizedBaseContracts": [
+          56
+        ],
+        "name": "PropertyContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "PropertyContract.Property",
+            "id": 13,
+            "members": [
+              {
+                "constant": false,
+                "id": 4,
+                "name": "living_area",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "164:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "164:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 6,
+                "name": "bedrooms",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "191:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 5,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "191:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 8,
+                "name": "bathrooms",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "215:14:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "215:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "name": "furnishings",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "240:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 9,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "240:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "name": "parking",
+                "nodeType": "VariableDeclaration",
+                "scope": 13,
+                "src": "267:12:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "267:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Property",
+            "nodeType": "StructDefinition",
+            "scope": 56,
+            "src": "137:150:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 17,
+            "name": "properties",
+            "nodeType": "VariableDeclaration",
+            "scope": 56,
+            "src": "295:46:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Property_$13_storage_$",
+              "typeString": "mapping(address => struct PropertyContract.Property)"
+            },
+            "typeName": {
+              "id": 16,
+              "keyType": {
+                "id": 14,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "303:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "295:28:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Property_$13_storage_$",
+                "typeString": "mapping(address => struct PropertyContract.Property)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 15,
+                "name": "Property",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 13,
+                "src": "314:8:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Property_$13_storage_ptr",
+                  "typeString": "struct PropertyContract.Property"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 43,
+              "nodeType": "Block",
+              "src": "516:189:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 41,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 30,
+                        "name": "properties",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 17,
+                        "src": "527:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Property_$13_storage_$",
+                          "typeString": "mapping(address => struct PropertyContract.Property storage ref)"
+                        }
+                      },
+                      "id": 33,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 31,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 71,
+                          "src": "538:3:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "538:10:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "527:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Property_$13_storage",
+                        "typeString": "struct PropertyContract.Property storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 35,
+                          "name": "_living_area",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 19,
+                          "src": "575:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 36,
+                          "name": "_bedrooms",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 21,
+                          "src": "602:9:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 37,
+                          "name": "_bathrooms",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 23,
+                          "src": "626:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 38,
+                          "name": "_furnishings",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 25,
+                          "src": "651:12:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 39,
+                          "name": "_parking",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 27,
+                          "src": "678:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        ],
+                        "id": 34,
+                        "name": "Property",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 13,
+                        "src": "552:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Property_$13_storage_ptr_$",
+                          "typeString": "type(struct PropertyContract.Property storage pointer)"
+                        }
+                      },
+                      "id": 40,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "552:145:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Property_$13_memory",
+                        "typeString": "struct PropertyContract.Property memory"
+                      }
+                    },
+                    "src": "527:170:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Property_$13_storage",
+                      "typeString": "struct PropertyContract.Property storage ref"
+                    }
+                  },
+                  "id": 42,
+                  "nodeType": "ExpressionStatement",
+                  "src": "527:170:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 44,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setProperty",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 28,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19,
+                  "name": "_living_area",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44,
+                  "src": "381:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 18,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "381:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 21,
+                  "name": "_bedrooms",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44,
+                  "src": "409:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "409:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 23,
+                  "name": "_bathrooms",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44,
+                  "src": "434:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "434:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25,
+                  "name": "_furnishings",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44,
+                  "src": "460:17:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 24,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "460:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 27,
+                  "name": "_parking",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44,
+                  "src": "488:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 26,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "488:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "370:138:0"
+            },
+            "returnParameters": {
+              "id": 29,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "516:0:0"
+            },
+            "scope": 56,
+            "src": "350:355:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 54,
+              "nodeType": "Block",
+              "src": "774:48:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 49,
+                      "name": "properties",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 17,
+                      "src": "792:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Property_$13_storage_$",
+                        "typeString": "mapping(address => struct PropertyContract.Property storage ref)"
+                      }
+                    },
+                    "id": 52,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 50,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 71,
+                        "src": "803:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 51,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "803:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "792:22:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Property_$13_storage",
+                      "typeString": "struct PropertyContract.Property storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 48,
+                  "id": 53,
+                  "nodeType": "Return",
+                  "src": "785:29:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 55,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getProperty",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 45,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "733:2:0"
+            },
+            "returnParameters": {
+              "id": 48,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55,
+                  "src": "757:15:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Property_$13_memory_ptr",
+                    "typeString": "struct PropertyContract.Property"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 46,
+                    "name": "Property",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 13,
+                    "src": "757:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Property_$13_storage_ptr",
+                      "typeString": "struct PropertyContract.Property"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "756:17:0"
+            },
+            "scope": 56,
+            "src": "713:109:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 57,
+        "src": "104:721:0"
+      }
+    ],
+    "src": "35:792:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/PropertyContract.sol",
+      "exportedSymbols": {
+        "PropertyContract": [
+          56
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "35:32:0"
+      },
+      {
+        "attributes": {
+          "literals": [
+            "experimental",
+            "ABIEncoderV2"
+          ]
+        },
+        "id": 2,
+        "name": "PragmaDirective",
+        "src": "69:33:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            56
+          ],
+          "name": "PropertyContract",
+          "scope": 57
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "PropertyContract.Property",
+              "name": "Property",
+              "scope": 56,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "living_area",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3,
+                    "name": "ElementaryTypeName",
+                    "src": "164:4:0"
+                  }
+                ],
+                "id": 4,
+                "name": "VariableDeclaration",
+                "src": "164:16:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "bedrooms",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 5,
+                    "name": "ElementaryTypeName",
+                    "src": "191:4:0"
+                  }
+                ],
+                "id": 6,
+                "name": "VariableDeclaration",
+                "src": "191:13:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "bathrooms",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 7,
+                    "name": "ElementaryTypeName",
+                    "src": "215:4:0"
+                  }
+                ],
+                "id": 8,
+                "name": "VariableDeclaration",
+                "src": "215:14:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "furnishings",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 9,
+                    "name": "ElementaryTypeName",
+                    "src": "240:4:0"
+                  }
+                ],
+                "id": 10,
+                "name": "VariableDeclaration",
+                "src": "240:16:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "parking",
+                  "scope": 13,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 11,
+                    "name": "ElementaryTypeName",
+                    "src": "267:4:0"
+                  }
+                ],
+                "id": 12,
+                "name": "VariableDeclaration",
+                "src": "267:12:0"
+              }
+            ],
+            "id": 13,
+            "name": "StructDefinition",
+            "src": "137:150:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "properties",
+              "scope": 56,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => struct PropertyContract.Property)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => struct PropertyContract.Property)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 14,
+                    "name": "ElementaryTypeName",
+                    "src": "303:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Property",
+                      "referencedDeclaration": 13,
+                      "type": "struct PropertyContract.Property"
+                    },
+                    "id": 15,
+                    "name": "UserDefinedTypeName",
+                    "src": "314:8:0"
+                  }
+                ],
+                "id": 16,
+                "name": "Mapping",
+                "src": "295:28:0"
+              }
+            ],
+            "id": 17,
+            "name": "VariableDeclaration",
+            "src": "295:46:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "setProperty",
+              "scope": 56,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_living_area",
+                      "scope": 44,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 18,
+                        "name": "ElementaryTypeName",
+                        "src": "381:4:0"
+                      }
+                    ],
+                    "id": 19,
+                    "name": "VariableDeclaration",
+                    "src": "381:17:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_bedrooms",
+                      "scope": 44,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 20,
+                        "name": "ElementaryTypeName",
+                        "src": "409:4:0"
+                      }
+                    ],
+                    "id": 21,
+                    "name": "VariableDeclaration",
+                    "src": "409:14:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_bathrooms",
+                      "scope": 44,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 22,
+                        "name": "ElementaryTypeName",
+                        "src": "434:4:0"
+                      }
+                    ],
+                    "id": 23,
+                    "name": "VariableDeclaration",
+                    "src": "434:15:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_furnishings",
+                      "scope": 44,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 24,
+                        "name": "ElementaryTypeName",
+                        "src": "460:4:0"
+                      }
+                    ],
+                    "id": 25,
+                    "name": "VariableDeclaration",
+                    "src": "460:17:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_parking",
+                      "scope": 44,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 26,
+                        "name": "ElementaryTypeName",
+                        "src": "488:4:0"
+                      }
+                    ],
+                    "id": 27,
+                    "name": "VariableDeclaration",
+                    "src": "488:13:0"
+                  }
+                ],
+                "id": 28,
+                "name": "ParameterList",
+                "src": "370:138:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 29,
+                "name": "ParameterList",
+                "src": "516:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "struct PropertyContract.Property storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "type": "struct PropertyContract.Property storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 17,
+                                  "type": "mapping(address => struct PropertyContract.Property storage ref)",
+                                  "value": "properties"
+                                },
+                                "id": 30,
+                                "name": "Identifier",
+                                "src": "527:10:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "sender",
+                                  "referencedDeclaration": null,
+                                  "type": "address payable"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 71,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 31,
+                                    "name": "Identifier",
+                                    "src": "538:3:0"
+                                  }
+                                ],
+                                "id": 32,
+                                "name": "MemberAccess",
+                                "src": "538:10:0"
+                              }
+                            ],
+                            "id": 33,
+                            "name": "IndexAccess",
+                            "src": "527:22:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct PropertyContract.Property memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 13,
+                                  "type": "type(struct PropertyContract.Property storage pointer)",
+                                  "value": "Property"
+                                },
+                                "id": 34,
+                                "name": "Identifier",
+                                "src": "552:8:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 19,
+                                  "type": "uint256",
+                                  "value": "_living_area"
+                                },
+                                "id": 35,
+                                "name": "Identifier",
+                                "src": "575:12:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 21,
+                                  "type": "uint256",
+                                  "value": "_bedrooms"
+                                },
+                                "id": 36,
+                                "name": "Identifier",
+                                "src": "602:9:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 23,
+                                  "type": "uint256",
+                                  "value": "_bathrooms"
+                                },
+                                "id": 37,
+                                "name": "Identifier",
+                                "src": "626:10:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 25,
+                                  "type": "bool",
+                                  "value": "_furnishings"
+                                },
+                                "id": 38,
+                                "name": "Identifier",
+                                "src": "651:12:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 27,
+                                  "type": "bool",
+                                  "value": "_parking"
+                                },
+                                "id": 39,
+                                "name": "Identifier",
+                                "src": "678:8:0"
+                              }
+                            ],
+                            "id": 40,
+                            "name": "FunctionCall",
+                            "src": "552:145:0"
+                          }
+                        ],
+                        "id": 41,
+                        "name": "Assignment",
+                        "src": "527:170:0"
+                      }
+                    ],
+                    "id": 42,
+                    "name": "ExpressionStatement",
+                    "src": "527:170:0"
+                  }
+                ],
+                "id": 43,
+                "name": "Block",
+                "src": "516:189:0"
+              }
+            ],
+            "id": 44,
+            "name": "FunctionDefinition",
+            "src": "350:355:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getProperty",
+              "scope": 56,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 45,
+                "name": "ParameterList",
+                "src": "733:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 55,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "struct PropertyContract.Property",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "Property",
+                          "referencedDeclaration": 13,
+                          "type": "struct PropertyContract.Property"
+                        },
+                        "id": 46,
+                        "name": "UserDefinedTypeName",
+                        "src": "757:8:0"
+                      }
+                    ],
+                    "id": 47,
+                    "name": "VariableDeclaration",
+                    "src": "757:15:0"
+                  }
+                ],
+                "id": 48,
+                "name": "ParameterList",
+                "src": "756:17:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 48
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "type": "struct PropertyContract.Property storage ref"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 17,
+                              "type": "mapping(address => struct PropertyContract.Property storage ref)",
+                              "value": "properties"
+                            },
+                            "id": 49,
+                            "name": "Identifier",
+                            "src": "792:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 71,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 50,
+                                "name": "Identifier",
+                                "src": "803:3:0"
+                              }
+                            ],
+                            "id": 51,
+                            "name": "MemberAccess",
+                            "src": "803:10:0"
+                          }
+                        ],
+                        "id": 52,
+                        "name": "IndexAccess",
+                        "src": "792:22:0"
+                      }
+                    ],
+                    "id": 53,
+                    "name": "Return",
+                    "src": "785:29:0"
+                  }
+                ],
+                "id": 54,
+                "name": "Block",
+                "src": "774:48:0"
+              }
+            ],
+            "id": 55,
+            "name": "FunctionDefinition",
+            "src": "713:109:0"
+          }
+        ],
+        "id": 56,
+        "name": "ContractDefinition",
+        "src": "104:721:0"
+      }
+    ],
+    "id": 57,
+    "name": "SourceUnit",
+    "src": "35:792:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.17+commit.d19bba13.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x62b6305EB9115A240b9F6942094285BC6ffc0B18",
+      "transactionHash": "0x403dbb4fffc1c2633435d4ec9ba72d78b2d7b0a85f851fa3e429deb7fc6d4407"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-05-01T11:23:37.635Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
